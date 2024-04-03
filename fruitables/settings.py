@@ -31,7 +31,8 @@ SECRET_KEY = 'django-insecure-rx!@3riu2qhoc06h!nqoka2@&$$)_ve@#2wa#tp5gs#^n(9^uz
 DEBUG = False
 
 # ALLOWED_HOSTS = ['.vercel.app', '*']
-ALLOWED_HOSTS = ['.vercel.app', 'now.sh', 'http://localhost:5173', '127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app', 'now.sh',
+                 'http://localhost:5173', '127.0.0.1', '*']
 CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
 
 
@@ -197,7 +198,7 @@ DJOSER = {
 AUTH_USER_MODEL = 'user.UserAccount'
 
 STATIC_URL = "/static/"
-STATIC_ROOT = BASE_DIR / "staticfiles_build"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [os.path.join(STATIC_ROOT, "static")]
 # STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'static')
